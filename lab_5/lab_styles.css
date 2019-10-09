@@ -62,12 +62,12 @@ h3 {
   flex-wrap: nowrap;
 }
 
-.instructions {
+#instructions {
   padding: 0 25px;
   list-style: disc;
 }
 
-.content {
+#content {
   background: #fff;
   border: 2px dotted #444;
   flex-grow: 2;
@@ -77,7 +77,7 @@ h3 {
   margin: 25px 50px;
 }
 
-.button {
+#button {
   background-color: #ffc477;
   -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
@@ -93,7 +93,7 @@ h3 {
   text-shadow: 0px 1px 1px #cc9f52;
 }
 
-.button:hover {
+#button:hover {
   background-color: coral;
   border: 2px solid rgb(216, 91, 46);
 }
