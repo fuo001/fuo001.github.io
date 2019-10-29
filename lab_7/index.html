@@ -32,7 +32,8 @@
           text = "<ul>"
 
           for(i = 0; i < res.length; i++){
-            text = text + "<li>" + res[i].route_id + ": " + res[i].title + "</li>"
+            // text = text + "<li>" + res[i].route_id + ": " + res[i].title + "</li>" // pre-extra credit
+            text = text + "<li>" + res[i].route_id + ": " + res[i].title.split(res[i].route_id).pop() + "</li>"
           }
           
           text = text + "</ul>"
@@ -45,14 +46,14 @@
           title = res.map(c => c.title)
 
           num = ids.find(function(element) {
-            return element === "124";
+            return element === "108";
           })
 
           name = title.find(function(element) {
-            return element === "Shady Grove";
+            return element === "108 Adelphi";
           })
-
-          document.querySelector(".header").innerHTML = "UMD Bus Route " + num + " " + name
+          // document.querySelector(".header").innerHTML = "UMD Bus Route " + num + " " + name //pre-extra credit
+          document.querySelector(".header").innerHTML = "UMD Bus Route " + num + " " + name.split(num).pop()
 
           return res;
         })
